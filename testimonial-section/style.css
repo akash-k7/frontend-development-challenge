@@ -1,0 +1,70 @@
+@font-face {
+    font-family: face;
+    src: url(rale.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: face;
+}
+html,body{
+    display: grid;
+    height: 100%;
+    align-items: center;
+}
+h2{
+    text-align:center;
+    text-transform:capitalize;
+    font-weight:normal;
+    font-size:2rem;
+  }
+  h2 span{
+    font-weight:bold;
+    color:#1b4683;
+  }
+
+  .wrapper{
+    margin-left:5%;
+    margin-right:5%;
+    display:flex;
+    align-items: center;
+    align-content: center;
+  }
+  .box{
+    padding:0 1rem;
+    text-align:left;
+  }
+  .box h3{
+    text-align:center;
+    font-weight:normal;
+    color:#2E5894;
+    margin-top: 2rem;
+  }
+  .box p{
+    margin-top: 1rem;
+    font-size:90%;
+    line-height:23px;
+  }
+  .box h4{
+    font-size: 25px;
+    font-weight: normal;
+    margin-top: 2rem;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+  }
+  .stars{
+    color: #1b4683;
+  }
+
+  @media (max-width:426px){
+    body{
+        margin-top:3rem;
+        margin-bottom:5rem;
+      }
+    .wrapper{
+        display: flex;
+        flex-direction:column;
+    }
+  }
+  
