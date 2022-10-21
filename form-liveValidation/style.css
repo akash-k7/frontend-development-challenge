@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 550px;
+    padding: 25px;
+    margin: 1rem auto;
+    background:#91a3b0;
+    color: grey;
+}
+
+.container{
+    background:whitesmoke;
+    width: 500px;
+    padding: 25px;
+    margin: 0 auto 0;
+    border-radius: 6px;
+
+}
+h2{
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+}
+h2::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 0;
+    background: #bebebe;
+    width: 170px;
+    margin-top: 1rem;
+}
+h2::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    right: 0;
+    background: #bebebe;
+    width: 170px;
+    margin-top: 1rem;
+}
+p{
+  font-size: 18px;  
+  color: grey;
+  margin-top: 1rem;
+  text-align: center;
+}
+.details{
+    width: 90%;
+    margin: 20px auto;
+}
+
+.name{
+    width: 49%;
+    padding: 8px 30px;
+    transition: box-shadow 300ms ease-out;
+}
+.name:focus{
+    box-shadow: 0px 0px 5px rgba(81, 203, 238, 1);
+}
+
+.other{
+    width: 100%;
+    padding: 8px 30px;
+    transition: box-shadow 300ms ease-out;
+}
+.other:focus{
+    box-shadow:0 0 5px rgba(81, 203, 238, 1);
+}
+.details i{
+    position: absolute;
+    margin: 0.5em;
+}
+
+.name , .other{
+    border: 2px solid #cccccc;
+    outline: none;
+    border-radius: 4px;
+}
+
+.dob{
+    width: 75%;
+}
+
+.file{
+    width:60%;
+}
+
+.gender{
+    margin-right: 10%;
+}
+
+.select{
+    padding: 0.5em;
+    width: 99%;
+}
+
+.check{
+    margin-left: 0;
+}
+
+.green{
+    text-decoration: none;
+    color: #01a049;
+}
+
+.btn{
+    width: 99%;
+    padding: 8px 30px;
+    background: #4CAF50;
+    outline: none;
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color:#01a049;
+}
+
+h6{
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 6rem;
+    color: white;
+    font-size: 1rem;
+}
+
+h6 a{
+    color: white;
+}
+.error{
+    font-size: 0.8rem;
+    color:#f44336;
+}
+
+#lnameError{
+    margin-left: 13rem;
+}
+
+@media (max-width:440px){
+    .details{
+      margin-top:2px
+    }
+    .name{
+      width: 99%;
+      padding: 8px 30px;
+      margin-top:1.5rem;
+    }
+  
+    .names i{
+      margin-top:2rem; 
+    }
+    
+    
+  }
