@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Registration Form</title>
+  </head>
+  <body> 
+    
+      <div class="container">
+        <h2>Register</h2>
+        <p>Create your account. It's free and only takes a minute.</p>
+        <form id="signupForm">
+          <div class="details names">
+            <i class="fa fa-solid fa-user"></i>
+            <input id="fname" name="fname" type="text" placeholder="First Name" class="name">
+            <span>
+              <i class="fa fa-solid fa-user"></i>
+              <input id="lname" name="lname" type="text" placeholder="Last Name" class="name">
+            </span>
+            <label id="fnameError" class="error" for="fname"></label>
+            <label id="lnameError" class="error" for="lname" style="margin-left: 37px;"></label>
+          </div>
+
+          <div class="details">
+            <i class="fa fa-solid fa-envelope"></i>
+            <input type="email" id="emailId" placeholder="Email" class="other" >
+            <label id="emailError" class="error" for="email"></label>
+          </div>
+
+          <div class="details">
+            <i class="fa fa-solid fa-mobile"></i>
+            <input id="phone" name="phone"  placeholder="Mobile" class="other"">
+            <label id="phoneError" class="error" for="phone"></label>
+          </div>
+
+          <div class="details">
+            <label>Date of Birth:</label>
+            <input type="date"  class="other dob" >
+          </div>
+
+          <div class="details">
+            <label>Upload your Resume:</label>
+            <input type="file"  class="other file" id="file">
+            <label id="fileError" class="error" for="file"></label>
+          </div>
+
+          <div class="details">
+            <label>Proficiency in English:</label>
+            <input type="range"  class="other range">
+          </div>
+
+          <div class="details">
+            <textarea name="message" placeholder="Your Message Here!!" cols="50" rows="5"></textarea>
+          </div>
+
+          <div class="details">
+            <i class="fa fa-sharp fa-solid fa-lock"></i>
+            <input name="password" type="password" id="password" placeholder="Password" class="other">
+            <label id="passwordError" class="error" for="password"></label>
+          </div>
+
+          <div class="details">
+            <i class="fa fa-sharp fa-solid fa-lock"></i>
+            <input id="confirmPass" name="confirmPass" type="password" placeholder="Confirm Password" class="other">
+            <label id="confirmPassError" class="error" for="confirmPass"></label>
+          </div>
+
+          <div class="details">
+            <input type="radio" name="gender">
+            <label class="gender">Male</label>
+            <input type="radio" name="gender">
+            <label class="gender">Female</label>
+            <input type="radio" name="gender">
+            <label class="gender">Prefer Not to Say</label>
+          </div>
+
+          <div class="details">
+            <select class="select">
+              <option>Choose Your Country</option>
+              <option>Afghanisthan</option>
+              <option>Algeria</option>
+              <option>Belgium</option>
+              <option>Canada</option>
+              <option>Denmark</option>
+              <option>Egypt</option>
+              <option>France</option>
+              <option>Germany</option>
+              <option>Hungary</option>
+              <option>India</option>
+              <option>Japan</option>
+              <option>Korea</option>
+              <option>Lalaysia</option>
+              <option>Nigeria</option>
+              <option>Oman</option>
+              <option>Peru</option>
+              <option>Qatar</option>
+              <option>Russia</option>
+              <option>Switzerland</option>
+              <option>Turkey</option>
+              <option>United states</option>
+              <option>Vietnam</option>
+              <option>Yemen</option>
+              <option>Zimbawe</option>
+            </select>
+          </div>
+
+          <div class="details">
+            <label>Select languages known:</label>
+            <select class="select" multiple>
+              <option>English</option>
+              <option>Spanish</option>
+              <option>German</option>
+              <option>Malayalam</option>
+              <option>Hindi</option>
+              <option>Arabic</option>
+            </select>
+          </div>
+          <div class="details check">
+            <input type="checkbox" id="checkbox" name="agree" value="agree">
+            <label>
+              I accept the <a href="#" class="green">Terms of Use</a> & <a href="#" class="green">Privacy Policy</a>
+            </label>
+          </div>
+          <label id="checkError" class="error" for="agree" ></label>
+          <div class="details">
+            <input id="submitForm" type="submit" value="Register Now" class="btn">
+          </div>
+        </form>
+      </div>
+      
+      <h6>Already have an account? &nbsp; <a href="#">Sign in</a></h6>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"> </script>   
+  
+    <script src="script.js"></script>
+  </body>
+</html>
