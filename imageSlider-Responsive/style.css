@@ -6,10 +6,7 @@
 .item{
     width: 100%;
     height: 100vh;
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative; */
+  
 }
 .img
 {
@@ -29,38 +26,22 @@
 }
 .slide1{
     background-image:linear-gradient(to bottom, rgba(180,183,197,0.5), rgba(97,94,100,0.5)),url("stock/img1.jpg");
-    /* height: 100%; */
-    /* background-position: center;
-    background-repeat: no-repeat; */
     background-size: cover;
 }
 .slide2{
     background-image:linear-gradient(to bottom, rgba(180,183,197,0.5), rgba(97,94,100,0.5)),url("stock/img2.jpg");
-    /* height: 100%; */
-    /* background-position: center;
-    background-repeat: no-repeat; */
     background-size: cover;
 }
 .slide3{
     background-image:linear-gradient(to bottom, rgba(180,183,197,0.5), rgba(97,94,100,0.5)),url("stock/img3.jpg");
-    /* height: 100%; */
-    /* background-position: center; */
-    background-repeat: no-repeat;
     background-size: cover;
 }
 .slide4{
-    /* background-image: url("stock/img4.jpg"); */
     background-image:linear-gradient(to bottom, rgba(180,183,197,0.5), rgba(97,94,100,0.5)),url("stock/img4.jpg");
-    /* height: 100%; */
-    /* background-position: center;
-    background-repeat: no-repeat; */
     background-size: cover;
 }
 .slide5{
     background-image:linear-gradient(to bottom, rgba(180,183,197,0.5), rgba(97,94,100,0.5)),url("stock/img5.jpg");
-    /* height: 100%; */
-    /* background-position: center;
-    background-repeat: no-repeat; */
     background-size: cover;
 }
 
@@ -142,5 +123,146 @@
 }
 .container .owl-item.active .item .content p{
     animation: fadeInLeft;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
 }
+.container .owl-item.active .item .content a{
+    animation: flipInX ;
+    animation-duration: 1.5s;
+    animation-delay: 0.4s;
+}
+
+/******* Responsive *******/
+
+@media (min-width:1600px){
+    .content h2{
+        padding-bottom: 3rem;
+        font-size: 4.5rem;
+    }
+    
+    .content p{
+        font-size: 1.8rem;
+        line-height: 3rem;
+        padding-bottom: 3rem;
+    }
+    
+    .content a{
+        padding: 1rem 3rem;
+        font-size: 1.8rem;
+      }
+
+      .owl-prev img, .owl-next img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (min-width:900px) and (max-width:1200px){
+    .content h2{
+        padding-bottom: 2rem;
+        font-size: 2.5rem;
+    }
+    
+    .content p{
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .content a{
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+      }
+
+      .owl-prev img, .owl-next img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (min-width:460px) and (max-width:890px){
+    .content h2{
+        padding-bottom: 1rem;
+        font-size: 2rem;
+    }
+    
+    .content p{
+        font-size: 0.7rem;
+        line-height: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .content a{
+        padding: 0.5rem 1rem;
+        font-size: 0.7rem;
+    }
+
+    .owl-carousel:hover .owl-prev{
+        position: absolute;
+        left: 20px;
+        opacity: 1;
+    }
+    .owl-carousel:hover .owl-next{
+        position: absolute;
+        right: 20px;
+        opacity: 1;
+    }
+      .owl-prev img, .owl-next img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width:460px){
+    .slide1,.slide2,.slide3,.slide4,.slide5{
+        
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    .content h2{
+        padding-bottom: 1rem;
+        font-size: 1.2rem;
+    }
+    
+    .content p{
+        font-size: 0.5rem;
+        padding-bottom: 0.8rem;
+    }
+    .content a{
+        padding: 0.2rem 1rem;
+        font-size: 0.5rem;
+    }
+    .owl-dots{
+        bottom: 80px;
+    }
+    .owl-dots .owl-dot span {
+        width: 5px;
+        height: 5px;
+        margin: 2px 4px;
+    }
+}
+
+@media (max-width:340px){
+    .content h2{
+        padding-bottom: 1rem;
+        font-size: 1rem;
+    }
+    
+    .content p{
+        font-size: 0.4rem;
+        padding-bottom: 0.8rem;
+    }
+    .content a{
+        padding: 0.2rem 1rem;
+        font-size: 0.4rem;
+      }
+    
+}
+
+
+
+
+
+
+
