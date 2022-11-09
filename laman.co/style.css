@@ -1,0 +1,259 @@
+@font-face {
+    font-family: "neuebold";
+    src: url(fonts/neuebold.ttf);
+}
+@font-face {
+    font-family: "neuerom";
+    src: url(fonts/neuerom.ttf);
+}
+body{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+h2{
+    font-family: "neuebold";
+    font-size: 5rem;
+}
+h3,h4,h5{
+    font-family: "neuebold";
+}
+h6{
+    font-weight: bold;
+}
+p{
+    font-family: "neuerom";
+}
+img{
+    max-width: 100%;
+}
+.land{
+    margin: 8rem 5rem;
+}
+.land p{
+    margin-top: 2rem;
+}
+.land .btn{
+    margin-top: 1.5rem;
+    background-color: #7E4FFF;
+    color: white;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+}
+.land .btn:hover{
+    color: #7E4FFF;
+    background-color: white;
+    border: 1px solid black;
+}
+.navbar{
+    font-family:"neuebold" ;
+}
+.nav-item{
+    margin: 0 2rem;
+    font-family: "neuerom";
+}
+.box1{
+    background-color: #391A8E;
+    color: white;
+    margin: 0 1rem;
+    padding: 2rem 3rem;
+    border-radius: 30px;
+}
+h3{
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+}
+.box1 .para{
+    margin-bottom: 3rem;
+}
+.card1 i{
+    font-size: 3rem;
+margin-bottom: 2rem;
+}
+.card1 h5{
+    margin-bottom: 2rem;
+}
+.mainrow1,.mainrow2{
+    justify-content: center;
+    text-align: center;   
+    padding: 3rem 0; 
+}
+.mainrow1 .para{
+    margin-bottom: 2rem;
+}
+.mainrow1 h4{
+    font-size: 2rem;
+}
+.mainrow1 img{
+    padding: 2rem 0;
+}
+.mainrow2 .para{
+    margin-bottom: 2rem;
+}
+.foot p{
+    color:#9B9B9B;
+}
+.style1{
+    border-top: 1px solid #8c8b8b;
+}
+
+/* Media queries */
+@media (min-width:1560px) and (max-width:2650px){
+    .navbar{
+        margin: 2rem;
+    }
+    .navbar-brand img{
+        max-width: 100%!important;
+    }
+    .navbar-brand h6{
+        font-size: 2rem!important;
+    }
+    ul.navbar-nav a{
+        font-size: 1.8rem!important;
+    }
+    .register a{
+        font-size: 1.8rem;
+    }
+    .register i{
+        font-size: 2.5rem;
+    }
+    .land{
+        margin: 15rem 8rem;
+    }
+    .land h2{
+        font-size: 8rem;
+    }
+    .land p{
+        font-size: 2rem;
+    }
+    .land .btn{
+        font-size: 2rem;
+    }
+    .land .backg{
+        display: flex;
+        justify-content: center;
+    }
+    .box1{
+        padding: 5rem 8rem;
+        margin-bottom: 3rem;
+    }
+    .box1 h3{
+        font-size: 5rem;
+    }
+    .box1 h5{
+        font-size: 3rem;
+    }
+    .box1 p{
+        font-size: 2rem;
+    }
+    .box1 i{
+        font-size: 5rem;
+    }
+    .card1{
+        margin-top: 3rem;
+    }
+    .mainrow{
+        margin: 3rem 0;
+    }
+    .mainrow1 h3{
+        font-size: 5rem;
+    }
+    .mainrow1,.mainrow2 p{
+        font-size: 1.7rem;
+    }
+    .mainrow1 h4{
+        font-size: 4rem;
+    }
+    .mainrow2{
+        margin: 3rem 0;
+    }
+    .mainrow2 h3{
+        font-size:  5rem; ;
+    }
+    .mainrow2 h4{
+        font-size: 3rem!important;
+    }
+    .mainrow2 .btn{
+        font-size: 2rem;
+    }
+    .mainrow3{
+        margin: 4rem 6rem;
+    }
+    .mainrow3 h5{
+        font-size: 3rem!important;
+    }
+    .mainrow3 h6{
+        font-size: 2rem;
+    }
+    .mainrow3 p{
+        font-size: 1.6rem;
+    }
+   .card-body .img{
+        max-width: 80px!important;
+    }
+    .mainrow4{
+        margin: 3rem 4rem;
+    }
+    .mainrow4 h3{
+        font-size: 5rem;
+    }
+    .mainrow ,p,.btn ,h6{
+        font-size: 2rem;
+    }
+    .foot{
+        padding: 2rem!important;
+    }
+    .foot .icons{
+        font-size: 2rem;
+    }
+    
+
+}
+
+
+@media (max-width:440px){
+    .land h2{
+        font-size: 2rem;
+    }
+    .land .btn{
+        font-size: 0.8rem;
+    }
+
+    .icons{
+        text-align: center;
+    }
+    .tc{
+        text-align: center!important;
+    }
+    .box1 h3{
+        font-size: 1.8rem;
+    }
+    .box1 p{
+        font-size: 0.8rem;
+    }
+    .card1 i{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:380px) {
+    .land h2{
+        font-size: 1.5rem;
+    }
+    .land .btn{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width:325px){
+    .land p{
+        font-size: 0.8rem;
+    }
+    .land .btn{
+        font-size: 0.5rem;
+    }
+}
