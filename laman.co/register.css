@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "neuebold";
+    src: url(fonts/neuebold.ttf);
+}
+@font-face {
+    font-family: "neuerom";
+    src: url(fonts/neuerom.ttf);
+}
+h3{
+    font-family: "neuebold";
+}
+input,p,button{
+    font-family: "neuerom";
+}
+body{
+    background-color: #181919;
+}
+.icon,.btn{
+    background-color: #7E4FFF;
+}
+.btn:hover{
+    background-color: white;
+    color: #7E4FFF;
+}
