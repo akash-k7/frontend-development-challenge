@@ -157,7 +157,7 @@ a.butn:hover,.contact .btn:hover,a.butn:focus,.contact .btn:focus{
 }
 .expicon{
     color: var(--text);
-    font-size: 2rem;
+    font-size: 2.1rem;
 }
 .service{
     height: 100vh;
