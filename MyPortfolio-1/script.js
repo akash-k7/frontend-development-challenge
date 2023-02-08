@@ -2,13 +2,13 @@ $(".html").animate({
     width: "95%"
 }, 2500);
 $(".css").animate({
-    width: "92%"
+    width: "90%"
 }, 2500);
 $(".bs").animate({
     width: "90%"
 }, 2500);
 $(".js").animate({
-    width: "71%"
+    width: "70%"
 }, 2500);
 $(".php").animate({
     width: "70%"
